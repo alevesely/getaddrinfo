@@ -37,7 +37,8 @@ h   reset H, that is pass hints (the default),
 	and
 host.name is the host to look up.  If it is empty,
 the call will have node=NULL and service="80".
-ale@pcale:~/c/getaddrinfo$ ./getaddrinfo -4c github.com
+
+$ ./getaddrinfo -4c github.com
 
 getaddrinfo(github.com, NULL, hints, &res) = 0
 where hints has
