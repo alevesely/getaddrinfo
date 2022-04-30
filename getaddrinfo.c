@@ -226,6 +226,7 @@ int main(int argc, char *argv[])
 					do_addr(r->ai_addr),
 					nullarg(r->ai_canonname));
 			}
+			freeaddrinfo(res); // still leaks memory
 		}
 	}
 
